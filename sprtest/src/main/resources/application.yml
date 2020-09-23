@@ -1,0 +1,6 @@
+server:
+  port: 8081
+spring:
+  cq:
+    plugin-list:
+      - com.nkdark.plugin.TestPlugin

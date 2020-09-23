@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运行状况</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div>机器人运行状况</div>
+<div id="qq"></div>
+</body>
+<script>
+    $(function () {
+        $.get("/bot_info",{},function (data) {
+            $("#qq").html(data);
+        })
+    })
+</script>
+</html>

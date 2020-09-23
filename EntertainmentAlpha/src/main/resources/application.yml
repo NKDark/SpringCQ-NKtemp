@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    username: root
+    password: q
+    url: jdbc:mysql://127.0.0.1:3306/bot?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  cq:
+    plugin-list:
+      - com.nkdark.plugins.Dice
+      - com.nkdark.plugins.Tests
+      - com.nkdark.plugins.Repeat
+      - com.nkdark.plugins.RainbowFart
+      - com.nkdark.plugins.AdminController
+      - com.nkdark.plugins.Test02
+
+mybatis:
+  type-aliases-package: com.nkdark.pojo
+  mapper-locations: classpath:mapper/*.xml
+
+
+
+
+
+
+
+
+
+
